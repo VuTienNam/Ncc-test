@@ -36,7 +36,7 @@
 .description {
   margin-top: 30px;
   background-color: #efefef;
-  padding: 30px 10%;
+  padding: 30px 15%;
   margin-bottom: 40px;
 }
 
@@ -50,6 +50,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
+
+  @media only screen and (max-width: 912px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .grid-items__item {
