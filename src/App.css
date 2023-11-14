@@ -1,11 +1,13 @@
-.grid-layout {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  height: 100vh;
+.layout {
+  display: flex;
+  font-size: 16px;
 }
 
 .side-bar {
   color: white;
+  width: 150px;
+  height: 100vh;
+  position: fixed;
   background-color: black;
 }
 
@@ -17,10 +19,68 @@
   padding-left: 16px;
 }
 
+.body {
+  margin-left: 150px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.body .content {
+  text-align: center;
+  padding-top: 20px;
+  padding-inline: 10%;
+  flex-grow: 1;
+}
+
+.description {
+  margin-top: 30px;
+  background-color: #efefef;
+  padding: 30px 10%;
+  margin-bottom: 40px;
+}
+
+.description__title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.grid-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.grid-items__item {
+  text-align: left;
+
+  .item-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 18px;
+  }
+
+  .item-content {
+    line-height: 18.75px;
+
+    .image {
+      float: left;
+      margin-right: 16px;
+      img {
+        width: 128px;
+        aspect-ratio: 1;
+      }
+    }
+  }
+}
+
 .body .footer {
   height: 79px;
   display: flex;
   align-items: center;
-  padding-left: 150px;
+  padding-left: 10%;
   border-top: 1px solid #dedede;
+  margin-top: 80px;
 }
