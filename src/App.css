@@ -17,6 +17,17 @@
   display: flex;
   align-items: center;
   padding-left: 16px;
+  color: #aaaaaa;
+  font-weight: 700;
+}
+
+.side-bar__item.active {
+  color: white;
+}
+
+.side-bar__item:hover {
+  color: white;
+  background-color: #5c5c5c;
 }
 
 .body {

@@ -30,7 +30,7 @@ function App() {
       <div className='layout'>
         <div className='side-bar'>
           {sideBarItems.map((item, index) => (
-            <div key={index} className='side-bar__item'>
+            <div key={index} className={`side-bar__item ${index === 0 && "active"}`}>
               {item}
             </div>
           ))}
