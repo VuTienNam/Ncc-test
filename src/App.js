@@ -37,7 +37,7 @@ function App() {
         </div>
         <div className='body'>
           <div className='content'>
-            <img src={logo} />
+            <img src={logo} alt='logo' />
             <div className='description'>
               <div className='description__title'>Lorem ipsum dolor sit asmet?</div>
               <div className='description__detail'>
@@ -57,7 +57,7 @@ function App() {
                   <div className='item-title'>{item.title}</div>
                   <div className='item-content'>
                     <span className='image'>
-                      <img src={item.image} />
+                      <img src={item.image} alt='file' />
                     </span>
                     {item.text}
                   </div>

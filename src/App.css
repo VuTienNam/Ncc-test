@@ -40,14 +40,14 @@
 .body .content {
   text-align: center;
   padding-top: 20px;
-  padding-inline: 10%;
+  padding-inline: 7.29%;
   flex-grow: 1;
 }
 
 .description {
   margin-top: 30px;
   background-color: #efefef;
-  padding: 30px 15%;
+  padding: 30px 17.81%;
   margin-bottom: 40px;
 }
 
@@ -55,6 +55,10 @@
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 18px;
+}
+
+.description__detail {
+  line-height: 18.75px;
 }
 
 .grid-items {
@@ -95,7 +99,7 @@
   height: 79px;
   display: flex;
   align-items: center;
-  padding-left: 10%;
+  padding-left: 7.29%;
   border-top: 1px solid #dedede;
   margin-top: 80px;
 }
